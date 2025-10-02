@@ -47,7 +47,7 @@ const App = () => {
           element={authUser ? <ProfilePage /> : <Navigate to="/login" />}
         />
       </Routes>
-      <Toaster position="top-center" reverseOrder={false} />
+      <Toaster/>
     </div>
   );
 };
