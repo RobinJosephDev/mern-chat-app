@@ -1,4 +1,4 @@
-# 🌟 Full Stack Realtime Chat App
+# Full Stack Realtime Chat App
 
 A **full-stack real-time chat application** built with the **MERN stack** (MongoDB, Express, React, Node.js) and **Socket.io**. Includes authentication, real-time messaging, online status, global state management, and deployment-ready features.
 
@@ -6,7 +6,7 @@ A **full-stack real-time chat application** built with the **MERN stack** (Mongo
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **Frontend:** React, TailwindCSS, DaisyUI, Zustand (global state)
 * **Backend:** Node.js, Express, Socket.io
@@ -17,7 +17,7 @@ A **full-stack real-time chat application** built with the **MERN stack** (Mongo
 
 ---
 
-## ✨ Features
+## Features
 
 ### User Features
 
@@ -36,7 +36,7 @@ A **full-stack real-time chat application** built with the **MERN stack** (Mongo
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 chat-app/
@@ -60,7 +60,7 @@ chat-app/
 
 ---
 
-## ⚙️ Backend Setup
+## Backend Setup
 
 ### 1️⃣ Install dependencies
 
@@ -114,15 +114,15 @@ npm start
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
-* Backend: Render, Railway, or any Node.js hosting platform
+* Backend: Render
 * Frontend: Vercel, Netlify, or similar hosting service
 * Environment variables must be set in your hosting platform
 
 ---
 
-## 🔒 Security
+## Security
 
 * JWT-based authentication for protected routes
 * Input validation and error handling
@@ -131,17 +131,10 @@ npm start
 
 ---
 
-## 🧪 Testing & Local Development
+## Testing & Local Development
 
 * Test backend endpoints using Postman or similar tool
 * Client side: interact with chat interface to verify real-time messaging and online status
-
----
-
-## 📹 Demo
-
-* **Live URL:** *Add your live demo link here*
-* **YouTube Tutorial:** *Add YouTube video link here*
 
 ---
 
