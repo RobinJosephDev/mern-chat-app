@@ -2,8 +2,6 @@
 
 A **full-stack real-time chat application** built with the **MERN stack** (MongoDB, Express, React, Node.js) and **Socket.io**. Includes authentication, real-time messaging, online status, global state management, and deployment-ready features.
 
-> Demo App + Video Tutorial available on YouTube.
-
 ---
 
 ## Tech Stack
