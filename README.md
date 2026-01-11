@@ -114,14 +114,6 @@ npm start
 
 ---
 
-## Deployment
-
-* Backend: Render
-* Frontend: Vercel, Netlify, or similar hosting service
-* Environment variables must be set in your hosting platform
-
----
-
 ## Security
 
 * JWT-based authentication for protected routes
