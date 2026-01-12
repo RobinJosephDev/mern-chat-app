@@ -11,7 +11,7 @@ A **full-stack real-time chat application** built with the **MERN stack** (Mongo
 * **Database:** MongoDB Atlas
 * **Authentication:** JWT
 * **File Upload / Media:** Cloudinary
-* **Deployment:** Vercel / Render (or free hosting options)
+* **Deployment:** Vercel / Render
 
 ---
 
