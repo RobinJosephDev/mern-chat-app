@@ -9,14 +9,18 @@ import { app, server } from "./lib/socket.js";
 
 dotenv.config();
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(express.json());
 app.use(cookieParser());
+
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://your-vercel-app.vercel.app",
+    ],
     credentials: true,
   })
 );
@@ -25,7 +29,12 @@ app.use(
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
-server.listen(PORT, () => {
-  console.log("server is running on port:" + PORT);
-  connectDB();
+// Health check (optional but recommended)
+app.get("/", (req, res) => {
+  res.send("Backend running 🚀");
+});
+
+server.listen(PORT, async () => {
+  console.log(`Server running on port ${PORT}`);
+  await connectDB();
 });
