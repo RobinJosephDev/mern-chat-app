@@ -8,8 +8,8 @@ A **full-stack real-time chat application** built with the **MERN stack** (Mongo
 
 **Live App:** https://mern-chat-2xxhq87n8-robinjo1776-5d95d5ba.vercel.app/
 
-- **Frontend deployed on Vercel**
-- **Backend deployed on Heroku**
+- Frontend deployed on Vercel
+- Backend deployed on Heroku
 
 ---
 
