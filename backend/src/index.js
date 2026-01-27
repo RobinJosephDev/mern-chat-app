@@ -1,29 +1,31 @@
 import express from "express";
-import authRoutes from "./routes/auth.route.js";
-import messageRoutes from "./routes/message.route.js";
 import dotenv from "dotenv";
-import { connectDB } from "./lib/db.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
+import authRoutes from "./routes/auth.route.js";
+import messageRoutes from "./routes/message.route.js";
+import { connectDB } from "./lib/db.js";
 import { app, server } from "./lib/socket.js";
 
 dotenv.config();
 
 const PORT = process.env.PORT || 5000;
 
-// Middleware
-app.use(express.json());
-app.use(cookieParser());
-
+/**
+ * ✅ ALLOWED ORIGINS
+ */
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://mern-chat-jwvm88ssu-robinjo1776-5d95d5ba.vercel.app",
+  "https://mern-chat-2xxhq87n8-robinjo1776-5d95d5ba.vercel.app",
 ];
 
+/**
+ * ✅ CORS — MUST BE FIRST
+ */
 app.use(
   cors({
-    origin: (origin, callback) => {
-      // allow server-to-server & tools like Postman
+    origin: function (origin, callback) {
+      // allow Postman / server-to-server
       if (!origin) return callback(null, true);
 
       if (allowedOrigins.includes(origin)) {
@@ -33,14 +35,18 @@ app.use(
       }
     },
     credentials: true,
-  }),
+  })
 );
 
-// Routes
+app.use(express.json());
+app.use(cookieParser());
+
+/**
+ * ✅ ROUTES
+ */
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
-// Health check (optional but recommended)
 app.get("/", (req, res) => {
   res.send("Backend running 🚀");
 });
