@@ -4,14 +4,23 @@ A **full-stack real-time chat application** built with the **MERN stack** (Mongo
 
 ---
 
+## Live Demo
+
+**Live App:** https://mern-chat-2xxhq87n8-robinjo1776-5d95d5ba.vercel.app/
+
+Frontend deployed on Vercel
+Backend deployed on Heroku
+
+---
+
 ## Tech Stack
 
-* **Frontend:** React, TailwindCSS, DaisyUI, Zustand (global state)
-* **Backend:** Node.js, Express, Socket.io
-* **Database:** MongoDB Atlas
-* **Authentication:** JWT
-* **File Upload / Media:** Cloudinary
-* **Deployment:** Vercel / Render
+- **Frontend:** React, TailwindCSS, DaisyUI, Zustand (global state)
+- **Backend:** Node.js, Express, Socket.io
+- **Database:** MongoDB Atlas
+- **Authentication:** JWT
+- **File Upload / Media:** Cloudinary
+- **Deployment:** Vercel / Render
 
 ---
 
@@ -19,18 +28,18 @@ A **full-stack real-time chat application** built with the **MERN stack** (Mongo
 
 ### User Features
 
-* Register, login, and logout (JWT-based authentication)
-* Real-time private and group messaging with Socket.io
-* Online/offline user status indicator
-* Responsive UI built with TailwindCSS + DaisyUI
+- Register, login, and logout (JWT-based authentication)
+- Real-time private and group messaging with Socket.io
+- Online/offline user status indicator
+- Responsive UI built with TailwindCSS + DaisyUI
 
 ### Admin / App Features
 
-* JWT-protected API routes
-* Global state management using Zustand
-* Error handling on both client and server
-* Media/image uploads via Cloudinary
-* Ready for production deployment
+- JWT-protected API routes
+- Global state management using Zustand
+- Error handling on both client and server
+- Media/image uploads via Cloudinary
+- Ready for production deployment
 
 ---
 
@@ -107,24 +116,24 @@ npm install
 npm start
 ```
 
-* Frontend runs on `http://localhost:3000` by default.
-* Connects to backend on `http://localhost:5001`.
+- Frontend runs on `http://localhost:3000` by default.
+- Connects to backend on `http://localhost:5001`.
 
 ---
 
 ## Security
 
-* JWT-based authentication for protected routes
-* Input validation and error handling
-* Secure image/media upload via Cloudinary
-* HTTPS-ready production setup
+- JWT-based authentication for protected routes
+- Input validation and error handling
+- Secure image/media upload via Cloudinary
+- HTTPS-ready production setup
 
 ---
 
 ## Testing & Local Development
 
-* Test backend endpoints using Postman or similar tool
-* Client side: interact with chat interface to verify real-time messaging and online status
+- Test backend endpoints using Postman or similar tool
+- Client side: interact with chat interface to verify real-time messaging and online status
 
 ---
 
