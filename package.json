@@ -1,0 +1,10 @@
+{
+  "name": "mern-chat-monorepo",
+  "private": true,
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "start": "npm start --prefix backend"
+  }
+}
