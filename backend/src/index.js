@@ -19,7 +19,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://your-vercel-app.vercel.app",
+      "https://mern-chat-jwvm88ssu-robinjo1776-5d95d5ba.vercel.app",
     ],
     credentials: true,
   })
