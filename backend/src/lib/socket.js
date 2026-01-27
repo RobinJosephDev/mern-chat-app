@@ -15,7 +15,10 @@ export function getReceiverSocketId(userId) {
 
 export const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:5173"],
+    origin: [
+      "http://localhost:5173",
+      "https://mern-chat-jwvm88ssu-robinjo1776-5d95d5ba.vercel.app",
+    ],
     credentials: true,
   },
 });
