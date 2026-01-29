@@ -14,10 +14,8 @@ const PORT = process.env.PORT || 5000;
 /**
  * ✅ ALLOWED ORIGINS
  */
-const allowedOrigins = [
-  "http://localhost:5173",
-  "https://mern-chat-8n7cyyls7-robinjo1776-5d95d5ba.vercel.app",
-];
+const allowedOrigins = "*";
+
 
 /**
  * ✅ CORS — MUST BE FIRST
