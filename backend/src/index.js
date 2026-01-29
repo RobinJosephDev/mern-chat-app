@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 5000;
  */
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://mern-chat-ixgoftbxk-robinjo1776-5d95d5ba.vercel.app/",
+  "https://mern-chat-ixgoftbxk-robinjo1776-5d95d5ba.vercel.app",
 ];
 
 /**
