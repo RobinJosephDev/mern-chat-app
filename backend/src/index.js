@@ -14,26 +14,25 @@ const PORT = process.env.PORT || 5000;
 /**
  * ✅ ALLOWED ORIGINS
  */
-const allowedOrigins = "*";
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://mern-chat.vercel.app",
+];
 
-
-/**
- * ✅ CORS — MUST BE FIRST
- */
 app.use(
   cors({
-    origin: function (origin, callback) {
+    origin: (origin, callback) => {
       // allow Postman / server-to-server
       if (!origin) return callback(null, true);
 
       if (allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
+        return callback(null, true);
       }
+
+      return callback(new Error("Not allowed by CORS"));
     },
     credentials: true,
-  })
+  }),
 );
 
 app.use(express.json());
